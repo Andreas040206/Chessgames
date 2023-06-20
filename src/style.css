@@ -1,0 +1,89 @@
+body {
+  margin: 0px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.header {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.boardgameCon {
+  display: grid;
+  height: min(600px, 90vw);
+  width: min(600px, 90vw);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.sideNum {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 18px;
+  font-size: min(40px, 5vw);
+  font-weight: 700;
+}
+
+.sideLetter {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  font-size: min(40px, 5vw);
+  font-weight: 700;
+}
+
+.spot {
+  transition: 0.2s;
+}
+
+.evenSpot {
+  background-color: rgb(204, 204, 204);
+}
+
+.evenSpot:hover {
+  background-color: #9bcef8;
+}
+
+.oddSpot {
+  background-color: rgb(50, 50, 50);
+}
+
+.oddSpot:hover {
+  background-color: #5b92bf;
+}
+
+.selctedSpot {
+  background-color: #54adf5;
+}
+
+.selctedSpot:hover {
+  background-color: #54adf5;
+}
+
+.nextMoveSpot {
+  background-color: #54f587;
+}
+
+.calcBtn {
+  margin-top: 30px;
+  height: 70px;
+  width: 220px;
+  font-size: 30px;
+  border-radius: 0px;
+  border: none;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  transition: 0.2s;
+}
+
+.calcBtn:hover {
+  scale: 1.05;
+}
